@@ -16,7 +16,7 @@ public class Humain {
     }
 
     public void direBonjour(){
-        parler("Bonjour je m'appelle "+nom+"et j'aime boire du "+boisson);
+        parler("Bonjour je m'appelle "+nom+" et j'aime boire du "+boisson+" et j'ai "+argent+" sous en poche");
 
     }
 
@@ -36,12 +36,8 @@ public class Humain {
         return nom;
     }
 
-    public void gagnerArgent(int argent){
-       this.argent=+argent;
-    }
+    public void gagnerArgent(int argent){this.argent+=argent;}
 
-    public void perdentArgent(int argent){
-        this.argent=-argent;
-    }
+    public void perdreArgent(int argent){this.argent-=argent;}
 
 }

@@ -12,10 +12,13 @@ public class Ronin extends Humain {
 
     public void donner(int n,Commercants c){
         c.recevoir(n);
+        perdreArgent(n);
+        parler("Tiens voila "+n+" sous");
     }
      public void provoquer(Yakuza y){
         if (2*honneur>y.getReputation()){
-            gagnerArgent(y.perdreDuel());
+            gagnerArgent(y.getArgent());
+            y.perdreDuel();
             honneur=+1;
             parler("J'ai gagné le duel");
          }

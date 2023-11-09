@@ -9,13 +9,14 @@ public class Commercants extends Humain {
     }
 
     public int seFaireExtroquer(){
-        perdentArgent(super.getArgent());
+        perdreArgent(super.getArgent());
         parler("Ce monde est injuste !");
         return getArgent();
     }
 
     public void recevoir(int argent){
         gagnerArgent(argent);
+        parler("Merci le sang");
     }
 
 }

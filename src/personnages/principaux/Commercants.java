@@ -8,7 +8,7 @@ public class Commercants extends Humain {
         super(nom,"Thé",argent);
     }
 
-    public int seFaireExtroquer(){
+    public int seFaireExtorquer(){
         perdreArgent(super.getArgent());
         parler("Ce monde est injuste !");
         return getArgent();
